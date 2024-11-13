@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Điểm chuẩn</h2>
+    <input id="passingScore" type="text" placeholder="Điểm chuẩn">
+    <h3>Khu vực và đối tượng</h3>
+    <select id="area" name="area">
+        <option value="" disabled selected>Chọn khu vực</option>
+        <option value="X">X</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+      <select id="participant" name="participant">
+        <option value="" disabled selected>Chọn đối tượng</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <br>
+      <h3>Điểm 3 môn</h3>
+      <input id="score_1" type="text" placeholder="Môn 1">
+      <input id="score_2" type="text" placeholder="Môn 2">
+      <input id="score_3" type="text" placeholder="Môn 3">
+      <h3>Kết quả</h3>
+      <button onclick="calculateScore()">Kết quả</button>
+      <p id="result"></p>
+    <script src="./main.js"></script>
+</body>
+</html>

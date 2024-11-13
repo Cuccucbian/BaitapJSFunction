@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="mySelect" onchange="customer()">
+        <option value="0" selected>Chọn loại khách hàng</option>
+        <option value="1">Nhà dân</option>
+        <option value="2">Doanh nghiệp</option>
+    </select>
+    <input id="customerID" type="text" placeholder="Nhập mã khách hàng">
+    <input id="preCable" type="number" placeholder="Số kênh cao cấp">
+    <input id="connectedCable" type="number" placeholder="Số kênh kết nối">
+    <br>
+    <button onclick="calculateCable()">Tính tiền cáp</button>
+    <p id="result"></p>
+    <script src="./main.js"></script>
+</body>
+</html>
